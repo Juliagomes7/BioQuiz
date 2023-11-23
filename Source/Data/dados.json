@@ -1,0 +1,15 @@
+{
+  "perguntas": [
+    {
+      "enunciado": "A intolerância à lactose é causada pela deficiência na produção da enzima lactase, dificultando a digestão desse carboidrato. Entre os sintomas dessa deficiência estão: diarreia, dores abdominais, inchaço, náuseas e, às vezes, vômitos e flatulência (excesso de gases). Para não ter esses sintomas, as pessoas com essa deficiência devem evitar a ingestão de:",
+      "opcoes": [
+        "a) carne assada.",
+        "b) batata cozida.",
+        "c) queijo.",
+        "d) mel."
+      ],
+      "resposta_correta": "c) queijo.",
+      "link_resposta": "resp1.html"
+    }
+  ]
+}
