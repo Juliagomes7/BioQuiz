@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BioQuiz 15</title>
+        <link rel="stylesheet" href="paginas.css">
+    </head>
+    
+    <body>
+        <header>SISTEMA DIGESTÓRIO</header>
+        <div class="nav">
+            <audio id="background-music" autoplay loop>
+                <source src="audio/music.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio HTML5.
+            </audio>
+            
+            <button id="mute-button">
+                <img width="10px" height="30px" id="speaker-icon" src="audio/volume.svg" alt="Unmute">
+            </button>
+            
+            
+            <div class="barra-progresso">
+                <div class="porcentagem" id="progresso-da-barra"></div>
+                <div id="mostracontagem"></div>
+            </div>
+        </div>
+        <main>
+            <div class="imagem-container">
+                <img src="Imagens/corpo.png" class="i00">
+                <img src="Imagens/01.png" id="i01">
+                <img src="Imagens/02.png" id="i02">
+                <img src="Imagens/03.png" id="i03">
+                <img src="Imagens/04.png" id="i04">
+                <img src="Imagens/05.png" id="i05">
+                <img src="Imagens/06.png" id="i06">
+                <img src="Imagens/07.png" id="i07">
+                <img src="Imagens/08.png" id="i08">
+                <img src="Imagens/09.png" id="i09">
+                <img src="Imagens/10.png" id="i10">
+                <img src="Imagens/11.png" id="i11">
+                <img src="Imagens/12.png" id="i12">
+                <img src="Imagens/13.png" id="i13">
+                <img src="Imagens/14.png" id="i14">
+                <img src="Imagens/15.png" id="i15">
+            </div>
+            <div class="content">
+                <span class="spnQtd"></span>
+                <span class="question"></span>
+                <div class="answers">
+                    
+                </div>
+            </div>
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </div>
+        </main>
+    
+        <script src="paginas.js" type="module"></script>
+    </body>
+</html>

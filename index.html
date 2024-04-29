@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
+        <title>BioQuiz</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+        <script src="script.js" type="module"></script>
+    </head>
+    
+    <body>
+        <header>SISTEMA DIGESTÓRIO</header>
+        <main>
+        <div class="titulo">
+            Bem-vindo ao jogo do sistema digestório!
+        </div>
+        <audio id="background-music" autoplay loop>
+            <source src="audio/music.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio HTML5.
+        </audio>
+        
+        <button id="mute-button">
+            <img width="30px" height="50px" id="speaker-icon" src="audio/volume.svg" alt="Unmute">
+        </button>
+        
+        <div class="container">
+            <img src="Imagens/completo.png" class="imagem">
+            <div class="per">
+                <ul>
+                    <li><a>Este é um quiz sobre o sistema digetório;</a>
+                    <li><a>Ele é composto por 15 perguntas de múltipla escolha; </a>
+                    <li><a>O quiz possui 3 dificuldades: fácil, média e difícil; </a>
+                    <li><a>A cada 5 perguntas, a dificuldade aumenta; </a>
+                    <li><a>Cada pergunta possui 3 minutos para ser respondida; </a>
+                    <li><a>Quanto mais perguntas você acertar, mais partes do sistema digestório serão reveladas;</a>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="play">
+            <a href="paginas.html">Começar!</a>
+        </div>
+    </main>
+    </body>
+</html>

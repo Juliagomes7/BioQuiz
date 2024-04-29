@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+}
+body{
+    background-color:  #c77d7d;
+    color: #252542;
+    font-family: 'poppins', sans-serif;
+}
+header{
+    background-color: #62314e;
+    color: #fff5d6;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.titulo{
+    color: #fff5d6;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+button{
+    background-color: #62314e;
+    margin:10px;
+    margin-left: 15vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #62314e;
+    color: #fff5d6;
+    padding: 20px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-radius: 25px;
+}
+.imagem{
+    height: 41vh;
+    border-radius: 25px;
+    padding-right: 5px;
+}
+.per{
+    padding: 15px;
+    font-size: 20px;
+    background-color: #252542;
+    border-radius: 25px;
+}
+.play{
+    background-color: #62314e;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 25px;
+    margin-top: 45px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: center;
+    cursor: pointer;
+}.play a{
+    color: #fff5d6;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+.play:hover{
+    background-color: #252542;
+}
+@media only screen and (max-width: 720px) {
+    *{
+        margin: 0;
+    }
+    body{
+        background-color:  #c77d7d;
+        color: #252542;
+        font-family: 'poppins', sans-serif;
+    }
+    header{
+        background-color: #62314e;
+        color: #fff5d6;
+        padding: 5px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .titulo{
+        color: #fff5d6;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    button{
+        background-color: #62314e;
+        margin:5px;
+        margin-left: 5vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        border-radius: 25px;
+        cursor: pointer;
+        height: 50px;
+    }
+    .container{
+        display: block;
+        text-align: center;
+        background-color: #62314e;
+        color: #fff5d6;
+        padding: 15px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        border-radius: 25px;
+    }
+    .imagem{
+        height: 41vh;
+        border-radius: 25px;
+        padding-right: 5px;
+    }
+    .per{
+        padding: 15px;
+        font-size: 20px;
+        background-color: #252542;
+        border-radius: 25px;
+        text-align: start;
+    }
+    .play{
+        background-color: #62314e;
+        padding: 20px;
+        justify-content: center;
+        border-radius: 25px;
+        margin-top: 45px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        text-align: center;
+        cursor: pointer;
+    }.play a{
+        color: #fff5d6;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    .play:hover{
+        background-color: #252542;
+    }
+}
