@@ -15,9 +15,20 @@ btnRestart.onclick = () => {
     content.style.display = "flex";
     contentFinish.style.display = "none";
 
+    const barra = document.querySelector('.barra-progresso');
+    if (barra) barra.style.display = "block";
+
     currentIndex = 0;
     questionsCorrect = 0;
-    window.location.href = "index.html";
+    g_iCount = 180;
+
+    for (let i = 1; i <= 15; i++) {
+        const el = document.getElementById(`i${i.toString().padStart(2, '0')}`);
+        if (el) el.style.visibility = "hidden";
+    }
+
+    loadQuestion();
+    contagem();
 };
 
 function redirecionarParaPagina(pagina) {
@@ -25,25 +36,23 @@ function redirecionarParaPagina(pagina) {
 }
 
 function nextQuestion(e) {
-
     clearTimeout(temporizador); 
 
     if (e.target.getAttribute("data-correct") === "true") {
-        g_iCount ++;
+        g_iCount++;
         questionsCorrect++;
+        organs(); 
     }
 
     if (currentIndex < questions.length - 1) {
         currentIndex++;
-        // Reinicia a cor do progresso da barra
         document.getElementById('progresso-da-barra').style.backgroundColor = "#4CAF50";
         loadQuestion();
-        // Reinicia o temporizador para a próxima pergunta
         g_iCount = 180;
         contagem();
     } else {
         finish();
-        clearProgressBar()
+        clearProgressBar();
     }
 }
 
@@ -116,14 +125,18 @@ function organs() {
 
 function clearProgressBar() {
     const prg = document.getElementById('progresso-da-barra');
-    prg.style.width = '0%'; // Define a largura da barra como zero para limpar a barra de progresso // Oculta a barra de progresso
+    prg.style.width = '0%'; 
 }
 
 function finish() {
     textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
     content.style.display = "none";
     contentFinish.style.display = "flex";
+
+    const barra = document.querySelector('.barra-progresso');
+    if (barra) barra.style.display = "none";
 }
+
 
 const backgroundMusic = document.getElementById('background-music');
 const muteButton = document.getElementById('mute-button');
